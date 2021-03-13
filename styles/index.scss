@@ -69,6 +69,9 @@ body {
             min-width: 100px;
             margin-bottom: 50px;
         }
+        .main-br-note {
+            display: block;
+        }
     }
     .footer-wrapper {
         background-color: $bgColor2;
@@ -110,12 +113,16 @@ body {
 // ==================================================================
 @media (max-width: 414px) and (min-width: 376px) {
     .title-page {
-        font-size: 1.6rem !important;
+        font-size: 1.4rem !important;
+        letter-spacing: 1px;
     }
     .page-section-title {
         padding: 70px 0 10px 0 !important;
         p {
             font-size: 13px !important;
+        }
+        .main-br-note {
+            display: none !important;
         }
     }
 }
@@ -125,12 +132,17 @@ body {
 // ==================================================================
 @media (max-width: 375px) and (min-width: 321px) {
     .title-page {
-        font-size: 1.6rem !important;
+        font-size: 1.4rem !important;
+        letter-spacing: 1px;
     }
     .page-section-title {
         padding: 70px 0 10px 0 !important;
         p {
             font-size: 12px !important;
+            padding: 0 7px;
+        }
+        .main-br-note {
+            display: none !important;
         }
     }
 }
