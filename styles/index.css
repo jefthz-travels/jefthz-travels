@@ -291,7 +291,7 @@
     margin-top: 10px;
   }
   .img-homepage-cover {
-    height: 300px;
+    height: 40vhpx;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -388,7 +388,7 @@
     margin-top: 10px;
   }
   .img-homepage-cover {
-    height: 300px;
+    height: 40vh;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
