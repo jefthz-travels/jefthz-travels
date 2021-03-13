@@ -45,6 +45,9 @@
     }
     .blog-content-wrapper {
         margin: 50px 0 100px 0;
+        .br-note {
+            display: none;
+        }
     }
     p {
         line-height: 28px;
@@ -83,6 +86,9 @@
             h6 {
                 font-size: 16px;
             }
+            .br-note {
+                display: block;
+            }
         }
         .blog-cover-photo {
             img {
@@ -115,6 +121,9 @@
             }
             h6 {
                 font-size: 16px;
+            }
+            .br-note {
+                display: block;
             }
         }
         .blog-cover-photo {
