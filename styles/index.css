@@ -291,7 +291,7 @@
     margin-top: 10px;
   }
   .img-homepage-cover {
-    height: 32vh;
+    height: 35vh;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -583,7 +583,7 @@
     width: 100% !important;
   }
   .destinations-cover-photo img {
-    height: 40vh !important;
+    height: 35vh !important;
   }
   .destinations-cover-photo p {
     font-size: 35px !important;
@@ -601,7 +601,7 @@
     width: 100% !important;
   }
   .destinations-cover-photo img {
-    height: 40vh !important;
+    height: 35vh !important;
   }
   .destinations-cover-photo p {
     font-size: 35px !important;
@@ -883,7 +883,7 @@ body .travel {
     padding: 0 12px !important;
   }
   .adventure-wrapper .adventures-cover-photo img {
-    height: 40vh !important;
+    height: 35vh !important;
   }
   .adventure-wrapper .adventures-cover-photo p {
     font-size: 35px !important;
@@ -915,7 +915,7 @@ body .travel {
     padding: 0 12px !important;
   }
   .adventure-wrapper .adventures-cover-photo img {
-    height: 40vh !important;
+    height: 35vh !important;
   }
   .adventure-wrapper .adventures-cover-photo p {
     font-size: 35px !important;
@@ -1037,7 +1037,7 @@ body .travel {
 
 @media (max-width: 414px) and (min-width: 376px) {
   .aboutme-container .aboutme-cover-photo img {
-    height: 40vh !important;
+    height: 35vh !important;
   }
   .aboutme-container .aboutme-cover-photo p {
     font-size: 35px !important;
@@ -1077,7 +1077,7 @@ body .travel {
 
 @media (max-width: 375px) and (min-width: 321px) {
   .aboutme-container .aboutme-cover-photo img {
-    height: 40vh !important;
+    height: 35vh !important;
   }
   .aboutme-container .aboutme-cover-photo p {
     font-size: 35px !important;
