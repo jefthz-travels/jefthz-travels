@@ -1,0 +1,137 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destinations-container {
+    width: 100%;
+    max-width: unset;
+    .row {
+        margin-bottom: 0;
+        .destinations-cover-photo {
+            margin-bottom: -5px;
+            position: relative;
+            img {
+                height: 73vh;
+                width: 100%;
+                object-fit: cover;
+                background-position: center center;
+            }
+            p {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                @include flexCenter();
+                color: $textColor2;
+                font-size: 62px;
+                font-weight: bold;
+                letter-spacing: 5px;
+                font-family: $font1;
+            }
+        }
+    }
+    .destination-wrapper {
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: -5px;
+        }
+        .title-destination {
+            @include flexCenter();
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            background: rgba(6, 5, 5, 0.3);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding: 7px;
+            &:hover {
+                background-color: transparent;
+                cursor: pointer;
+            }
+            h1 {
+                font-size: 34px;
+                color: $textColor2;
+                font-weight: bold;
+                letter-spacing: 0.2em;
+                margin: 0;
+                transition: 0.4s ease;
+                &:hover {
+                    color: $textColor3;
+                }
+            }
+        }
+    }
+    .travel {
+        height: 100vh;
+        width: 100%;
+        background-color: $bgColor1;
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 414px - 376px
+// ==================================================================
+@media (max-width: 414px) and (min-width: 376px) {
+    .destinations-container {
+        .row {
+            width: 100% !important;
+        }
+    }
+    .destinations-cover-photo {
+        img {
+            height: 40vh !important;
+        }
+        p {
+            font-size: 35px !important;
+            letter-spacing: 2px !important;
+        }
+    }
+    .destination-wrapper {
+        img {
+            height: 30vh !important;
+            object-fit: cover;
+        }
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 375px - 321px
+// ==================================================================
+@media (max-width: 375px) and (min-width: 321px) {
+    .destinations-container {
+        .row {
+            width: 100% !important;
+        }
+    }
+    .destinations-cover-photo {
+        img {
+            height: 40vh !important;
+        }
+        p {
+            font-size: 35px !important;
+            letter-spacing: 2px !important;
+        }
+    }
+    .destination-wrapper {
+        img {
+            height: 30vh !important;
+            object-fit: cover;
+        }
+        .title-destination {
+            h1 {
+                font-size: 30px !important;
+            }
+        }
+    }
+}

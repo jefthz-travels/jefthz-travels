@@ -1,0 +1,136 @@
+@import "./variables";
+@import "./homepage";
+@import "./destinations";
+@import "./destinationblog";
+@import "./adventures";
+@import "./_aboutme";
+@import "./blog";
+@import "./adventureblog";
+@import "./island-hopping";
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    background-color: $bgColor3;
+    height: 100%;
+    color: $textColor4;
+    scroll-behavior: smooth;
+    .row .col {
+        padding: 0;
+    }
+    .to-top {
+        background: $bgColor1;
+        position: fixed;
+        bottom: 15px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        @include flexCenter();
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+    }
+    .to-top.active {
+        bottom: 28px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+    .page-section-title {
+        padding: 70px 0 30px 0;
+        .title-page {
+            margin: 0 !important;
+            font-family: $font1;
+            font-size: 2.1875rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: $textColor3;
+            text-align: center;
+            transition: all 0.3s ease;
+            @include flexCenter();
+            &:hover {
+                color: $textColor1;
+                cursor: pointer;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+        }
+        p {
+            font-family: $font2;
+            font-size: 18px;
+            text-align: center;
+            min-width: 100px;
+            margin-bottom: 50px;
+        }
+    }
+    .footer-wrapper {
+        background-color: $bgColor2;
+        padding: 0;
+        margin: 0;
+        height: 80px;
+        div {
+            text-align: center;
+            img {
+                width: 150px;
+                height: auto;
+                margin-top: 2px;
+            }
+            p {
+                font-size: 0.75rem;
+                font-family: $font2;
+                color: $textColor2;
+                letter-spacing: 0.1em;
+                margin: -10px 0 0 0;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .title-page {
+        font-size: 1.6rem !important;
+    }
+    .page-section-title {
+        p {
+            font-size: 12px !important;
+        }
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 414px - 376px
+// ==================================================================
+@media (max-width: 414px) and (min-width: 376px) {
+    .title-page {
+        font-size: 1.6rem !important;
+    }
+    .page-section-title {
+        padding: 70px 0 10px 0 !important;
+        p {
+            font-size: 13px !important;
+        }
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 375px - 321px
+// ==================================================================
+@media (max-width: 375px) and (min-width: 321px) {
+    .title-page {
+        font-size: 1.6rem !important;
+    }
+    .page-section-title {
+        padding: 70px 0 10px 0 !important;
+        p {
+            font-size: 12px !important;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-wrapper {
+    width: 100%;
+    max-width: unset;
+    .row {
+        width: 85%;
+    }
+    .blog-cover-photo {
+        margin-bottom: -5px;
+        position: relative;
+        img {
+            height: 73vh;
+            width: 100%;
+            object-fit: cover;
+            background-position: center center;
+        }
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            @include flexCenter();
+            h6 {
+                color: $textColor2;
+                font-size: 62px;
+                letter-spacing: 1px;
+                font-family: $font1;
+                margin: 0;
+                text-align: center;
+            }
+            p {
+                color: $textColor2;
+                font-size: 18px;
+                font-family: $font2;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+    .blog-content-wrapper {
+        margin: 50px 0 100px 0;
+    }
+    p {
+        line-height: 28px;
+        font-family: $font2;
+        font-size: 1rem;
+    }
+    h6 {
+        font-family: $font2;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h4 {
+        font-family: $font2;
+        font-size: 35px;
+        font-weight: bold;
+        color: $textColor1;
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 414px - 376px
+// ==================================================================
+@media (max-width: 414px) and (min-width: 376px) {
+    .blog-wrapper {
+        .row {
+            width: 92% !important;
+        }
+        width: 100%;
+        .blog-content-wrapper {
+            margin: 30px 0 80px 0;
+            h4 {
+                font-size: 18px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+        }
+        .blog-cover-photo {
+            img {
+                height: 40vh !important;
+            }
+            h6 {
+                font-size: 34px !important;
+                letter-spacing: 2px !important;
+            }
+        }
+        p {
+            font-size: 14px !important;
+        }
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 375px - 321px
+// ==================================================================
+@media (max-width: 375px) and (min-width: 321px) {
+    .blog-wrapper {
+        width: 100%;
+        .row {
+            width: 92% !important;
+        }
+        .blog-content-wrapper {
+            margin: 30px 0 80px 0;
+            h4 {
+                font-size: 18px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+        }
+        .blog-cover-photo {
+            img {
+                height: 40vh !important;
+            }
+            h6 {
+                font-size: 34px !important;
+                letter-spacing: 2px !important;
+            }
+        }
+        p {
+            font-size: 14px !important;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.destinations-blog-container {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+    .row {
+        padding: 0 70px;
+        min-height: 100vh;
+    }
+    .destinations-blog-cover {
+        margin-bottom: -5px;
+        position: relative;
+        img {
+            height: 73vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        h6 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            @include flexCenter();
+            color: $textColor2;
+            font-size: 62px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            font-family: $font1;
+        }
+    }
+    .destination-blog-wrapper {
+        padding: 20px;
+        cursor: pointer;
+        img {
+            transition: 0.3s;
+            &:hover {
+                transform: translate(0, -10px);
+                opacity: 0.5;
+            }
+        }
+        .destination-blog-title {
+            h3 {
+                color: $textColor3;
+                font-weight: bold;
+                font-family: $font1;
+                font-size: 18px;
+                margin: 15px 0 0 0;
+                letter-spacing: 1px;
+            }
+            p {
+                margin: 0;
+                font-family: $font2;
+                color: $textColor1;
+            }
+        }
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 414px - 376px
+// ==================================================================
+@media (max-width: 414px) and (min-width: 376px) {
+    .destinations-blog-container {
+        .row {
+            padding: 0;
+        }
+        width: 100%;
+        .destinations-blog-cover {
+            img {
+                height: 40vh !important;
+            }
+            h6 {
+                font-size: 34px !important;
+                letter-spacing: 2px !important;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// ==================================================================
+// MEDIA SCRN 375px - 321px
+// ==================================================================
+@media (max-width: 375px) and (min-width: 321px) {
+    .destinations-blog-container {
+        .row {
+            padding: 0;
+        }
+        width: 100%;
+        .destinations-blog-cover {
+            img {
+                height: 40vh !important;
+            }
+            h6 {
+                font-size: 34px !important;
+                letter-spacing: 2px !important;
+                text-align: center;
+            }
+        }
+    }
+}

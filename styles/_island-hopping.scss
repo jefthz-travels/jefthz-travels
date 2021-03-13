@@ -1,0 +1,20 @@
+.island-site-wrapper {
+  padding: 10px;
+  .island-site-details {
+    margin-top: 5px;
+    p {
+      margin: 0;
+      font-family: $font2;
+      &:nth-child(1) {
+        font-size: 0.9375rem;
+        font-weight: bold;
+        color: $textColor3;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        font-size: 0.8125rem;
+        color: $textColor4;
+      }
+    }
+  }
+}
