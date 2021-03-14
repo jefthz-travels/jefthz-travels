@@ -900,7 +900,8 @@ body .travel {
     font-size: 24px !important;
     letter-spacing: 0.1em;
     font-weight: bold;
-    padding-bottom: 8px;
+    -webkit-transition: none;
+    transition: none;
   }
   .adventure-wrapper .adv-category .adventure-image-overlay .adventure-details {
     font-size: 13px !important;
@@ -939,7 +940,8 @@ body .travel {
     font-size: 24px !important;
     letter-spacing: 0.1em;
     font-weight: bold;
-    padding-bottom: 8px;
+    -webkit-transition: none;
+    transition: none;
   }
   .adventure-wrapper .adv-category .adventure-image-overlay .adventure-details {
     font-size: 13px !important;
