@@ -347,7 +347,7 @@
     height: 325px;
   }
   .image-content-wrapper .row .image-content-photo-wrapper .travel-content {
-    padding: 0 24px;
+    padding: 0 14px;
   }
   .image-content-wrapper .row .image-content-photo-wrapper .travel-content div h2 {
     font-size: 22px;
@@ -357,7 +357,6 @@
     font-size: 13px;
     letter-spacing: 0;
     line-height: 22px;
-    font-weight: 100;
     margin: 0;
   }
   .home-videos-wrapper .row {
@@ -373,9 +372,10 @@
   }
   .home-videos-wrapper .row .home-vlogs h3 {
     font-size: 15px;
+    margin-top: 0;
   }
   .home-videos-wrapper .row .home-vlogs P {
-    margin: 5px 0 0 0;
+    margin: 3px 0 0 0;
   }
 }
 
@@ -447,7 +447,7 @@
     height: 325px;
   }
   .image-content-wrapper .row .image-content-photo-wrapper .travel-content {
-    padding: 0 24px;
+    padding: 0 14px;
   }
   .image-content-wrapper .row .image-content-photo-wrapper .travel-content div h2 {
     font-size: 22px;
@@ -457,7 +457,6 @@
     font-size: 13px;
     letter-spacing: 0;
     line-height: 22px;
-    font-weight: 100;
     margin: 0;
   }
   .home-videos-wrapper .row {
@@ -473,9 +472,10 @@
   }
   .home-videos-wrapper .row .home-vlogs h3 {
     font-size: 15px;
+    margin-top: 0;
   }
   .home-videos-wrapper .row .home-vlogs P {
-    margin: 5px 0 0 0;
+    margin: 3px 0 0 0;
   }
 }
 
